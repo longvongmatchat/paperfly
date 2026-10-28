@@ -4,7 +4,7 @@
 
 ![Paperfly Banner](/public/og-image.png)
 
-🔗 **Live App:** [https://paperflysite.vercel.app/](https://paperflysite.vercel.app/)
+🔗 **Live App:** [https://paperfly-two.vercel.app/](https://paperfly-two.vercel.app/)
 
 ---
 
