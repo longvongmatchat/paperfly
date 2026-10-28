@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>paperfly.site</title>
+    <!-- Open Graph (Facebook, Discord, Zalo) -->
+    <meta property="og:site_name" content="paperfly.site" />
+    <meta property="og:title" content="paperfly.site" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://paperflysite.vercel.app/" />
+    <meta property="og:image" content="https://paperflysite.vercel.app/og-image.png" />
+    <meta property="og:image:secure_url" content="https://paperflysite.vercel.app/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="paperfly.site - Fold. Fly. Share." />
+
+    <!-- Twitter / X Card (summary_large_image) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="paperfly.site" />
+    <meta name="twitter:image" content="https://paperflysite.vercel.app/og-image.png" />
+
+    <!-- Màu viền Embed Discord (Primary Indigo) -->
+    <meta name="theme-color" content="#3F4468" />
+    <!-- Tải phông chữ viết tay & phông bo tròn tự nhiên -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Nunito:ital,wght@0,400..900;1,400..900&family=Patrick+Hand&display=swap" rel="stylesheet">
+  </head>
+  <body class="selection:bg-amber-200 selection:text-indigo-900">
+    <!-- Bộ lọc SVG tạo viền gợn sóng vẽ tay (Hand-drawn border effect) -->
+    <svg class="absolute w-0 h-0 overflow-hidden pointer-events-none" aria-hidden="true">
+      <defs>
+        <filter id="hand-drawn-filter" x="-5%" y="-5%" width="110%" height="110%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+        <filter id="rough-edge" x="-10%" y="-10%" width="120%" height="120%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="4" result="noise" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+      </defs>
+    </svg>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
